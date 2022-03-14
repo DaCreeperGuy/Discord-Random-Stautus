@@ -1,4 +1,3 @@
-#Requirements
+# Requirements
 
-Discord.js
-Easy Json Database
+Discord.js & Easy Json Database
