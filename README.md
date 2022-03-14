@@ -1,4 +1,4 @@
-##Requirements
+#Requirements
 
 Discord.js
 Easy Json Database
