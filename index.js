@@ -43,10 +43,10 @@
 
         while (s4d.client && s4d.client.token) {
             await delay(50);
-            Random_Game = mathRandomInt(1, 7);
+            Random_Game = mathRandomInt(1, 10);
             while (!(Random_Game != Last_Game)) {
                 if (Random_Game == Last_Game) {
-                    Random_Game = mathRandomInt(1, 7);
+                    Random_Game = mathRandomInt(1, 10);
                 }
             }
             if (Random_Game == 1) {
@@ -55,33 +55,48 @@
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 2) {
-                s4d.client.user.setActivity(String('Portal 2'));
+                s4d.client.user.setActivity(String('Pokemon Go'));
                 Last_Game = 2;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 3) {
-                s4d.client.user.setActivity(String('Cyber Punk 2077'));
+                s4d.client.user.setActivity(String('Valorent'));
                 Last_Game = 3;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 4) {
-                s4d.client.user.setActivity(String('Geometry Dash'));
+                s4d.client.user.setActivity(String('Candy Crush'));
                 Last_Game = 4;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 5) {
-                s4d.client.user.setActivity(String('Minecraft'));
+                s4d.client.user.setActivity(String('Portal 2'));
                 Last_Game = 5;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 6) {
-                s4d.client.user.setActivity(String('GTA 5'));
+                s4d.client.user.setActivity(String('Cyber Punk 2077'));
                 Last_Game = 6;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
             if (Random_Game == 7) {
-                s4d.client.user.setActivity(String('Detroit: Become Human'));
+                s4d.client.user.setActivity(String('Geometry Dash'));
                 Last_Game = 7;
+                await delay(Number((mathRandomInt(3600, 7200))) * 1000);
+            }
+            if (Random_Game == 8) {
+                s4d.client.user.setActivity(String('Minecraft'));
+                Last_Game = 8;
+                await delay(Number((mathRandomInt(3600, 7200))) * 1000);
+            }
+            if (Random_Game == 9) {
+                s4d.client.user.setActivity(String('GTA 5'));
+                Last_Game = 9;
+                await delay(Number((mathRandomInt(3600, 7200))) * 1000);
+            }
+            if (Random_Game == 10) {
+                s4d.client.user.setActivity(String('Detroit: Become Human'));
+                Last_Game = 10;
                 await delay(Number((mathRandomInt(3600, 7200))) * 1000);
             }
 
